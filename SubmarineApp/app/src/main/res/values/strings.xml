@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SubmarineApp</string>
+    <string name="a_problem_has_been_detected_and_the_system_has_been_shut_down_to_prevent_radioactivity_damage_to_your_computer">a problem has been detected and the system has been shut down to prevent radioactivity damage to your computer.</string>
+    <string name="to_initialize_manual_reboot_please_enter_the_date_of_the_last_specimen_retrieval">To initialize manual reboot please enter the date of the last specimen retrieval (MMDD) </string>
+    <string name="_0">0</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="enter">enter</string>
+    <string name="clear">clear</string>
+</resources>
