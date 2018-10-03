@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
-    tools:context="booklist.christine.anderson.submarineapp.ErrorScreen">
+    tools:context="booklist.christine.anderson.submarineapp.ErrorScreen"
+    android:windowActionBar="false">
 
     <TextView
         android:layout_marginTop="15dp"
@@ -16,7 +17,7 @@
         android:layout_height="wrap_content"
         android:text="@string/a_problem_has_been_detected_and_the_system_has_been_shut_down_to_prevent_radioactivity_damage_to_your_computer"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:fontFamily="@font/beefd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,7 +32,7 @@
         android:layout_margin="10dp"
         android:text="@string/to_initialize_manual_reboot_please_enter_the_date_of_the_last_specimen_retrieval"
         android:textColor="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:fontFamily="@font/beefd"
         android:paddingTop="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,12 +43,12 @@
         android:id="@+id/tv_input_date"
         android:layout_below="@id/tv_error_message2"
         android:paddingTop="15dp"
-        android:layout_width="80dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/white"
         android:hint=""
         android:textColorHint="@android:color/white"
-        android:textSize="14sp"
+        android:textSize="20sp"
         android:backgroundTint="@android:color/transparent"
         android:textCursorDrawable="@drawable/color_cursor"
         android:fontFamily="@font/beefd"
@@ -61,7 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/ll_2">
 
-        <Button
+        <!--<Button
             android:id="@+id/btn_0"
             android:backgroundTint="@color/colorPrimaryDark"
             android:layout_width="wrap_content"
@@ -100,15 +101,6 @@
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:fontFamily="@font/beefd"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_2"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/ll_3">
 
         <Button
             android:id="@+id/btn_4"
@@ -149,13 +141,6 @@
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:fontFamily="@font/beefd"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true">
 
         <Button
             android:id="@+id/btn_8"
@@ -176,7 +161,151 @@
             android:text="@string/_9"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"/>-->
+
+
+        <Button
+            android:id="@+id/btn_a"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_b"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_c"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_d"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_e"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_f"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_g"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_h"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_i"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_j"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_k"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_l"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_m"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_enter"
@@ -187,6 +316,155 @@
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:fontFamily="@font/beefd"/>
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ll_2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_n"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_o"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_p"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_q"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_r"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_s"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_t"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_u"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_v"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_w"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_x"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_y"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
+
+        <Button
+            android:id="@+id/btn_z"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_clear"
@@ -200,6 +478,5 @@
 
 
     </LinearLayout>
-
 
 </RelativeLayout>

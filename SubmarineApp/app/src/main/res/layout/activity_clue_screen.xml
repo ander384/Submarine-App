@@ -1,13 +1,363 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="booklist.christine.anderson.submarineapp.ClueScreen">
-    <TextView
+    android:background="#000000"
+    tools:context="booklist.christine.anderson.submarineapp.ClueScreen"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="40dp">
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Clue will be on this page"/>
+        android:id="@+id/line_1">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="MAL"/>
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="F"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="UNCTI"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="45"
+            android:text="O"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="N"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="OF"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="COMP"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="U"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="TE"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="R"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_2"
+        android:layout_below="@id/line_1">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="SYS"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="T"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="EM"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="MANUAL OVERRIDE"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_3"
+        android:layout_below="@id/line_2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="W"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="ILL B"/>
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="E"/>
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="NECESSARY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="L"/>
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="IFT"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_4"
+        android:layout_below="@id/line_3">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="PROTECTI"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="V"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="E COV"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="E"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="R AND"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_5"
+        android:layout_below="@id/line_4">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="PRESS"/>
+
+        <TextView
+            android:layout_marginStart="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="T"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="HE R"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="180"
+            android:text="E"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="D BUTTO"/>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:rotation="90"
+            android:text="N"/>
+
+        <TextView
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="TO"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/line_6"
+        android:layout_below="@id/line_5">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oldgamefatty"
+            android:textColor="#FFFFFF"
+            android:textSize="80sp"
+            android:text="ENGAGE EXTERIOR SYSTEMS"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

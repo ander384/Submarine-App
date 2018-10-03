@@ -9,6 +9,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.Button;
@@ -38,7 +39,7 @@ public class ErrorScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error_screen);
         this.inputDateTextView = findViewById(R.id.tv_input_date);
-        this.zeroButton = findViewById(R.id.btn_0);
+        /*this.zeroButton = findViewById(R.id.btn_0);
         this.oneButton = findViewById(R.id.btn_1);
         this.twoButton = findViewById(R.id.btn_2);
         this.threeButton = findViewById(R.id.btn_3);
@@ -47,11 +48,13 @@ public class ErrorScreen extends AppCompatActivity {
         this.sixButton = findViewById(R.id.btn_6);
         this.sevenButton = findViewById(R.id.btn_7);
         this.eightButton = findViewById(R.id.btn_8);
-        this.nineButton = findViewById(R.id.btn_9);
+        this.nineButton = findViewById(R.id.btn_9);*/
         this.enterButton = findViewById(R.id.btn_enter);
         this.clearButton = findViewById(R.id.btn_clear);
 
-        this.zeroButton.setOnClickListener(new View.OnClickListener() {
+
+
+        /*this.zeroButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onNumberButtonClick(view);
@@ -118,14 +121,14 @@ public class ErrorScreen extends AppCompatActivity {
             public void onClick(View view) {
                 onNumberButtonClick(view);
             }
-        });
+        });*/
 
         this.enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Button button = (Button) view;
                 String number = inputDateTextView.getText().toString();
-                if (Objects.equals(number, "0316")) {
+                if (Objects.equals(number, "CATS")) {
                     Intent myIntent = new Intent(ErrorScreen.this, ClueScreen.class);
                     ErrorScreen.this.startActivity(myIntent);
                 }
