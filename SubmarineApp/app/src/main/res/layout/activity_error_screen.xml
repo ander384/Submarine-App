@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="@string/to_initialize_manual_reboot_please_enter_the_date_of_the_last_specimen_retrieval"
+        android:text="To initialize manual reboot, approximate location is needed.\n \nPlease enter the name of the nearest visible landmark:"
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:fontFamily="@font/beefd"
