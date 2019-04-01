@@ -7,7 +7,8 @@
     android:orientation="vertical"
     android:background="@color/colorPrimaryDark"
     tools:context="booklist.christine.anderson.submarineapp.ErrorScreen"
-    android:windowActionBar="false">
+    android:windowActionBar="false"
+    android:paddingBottom="20dp">
 
     <TextView
         android:paddingTop="30dp"
@@ -55,6 +56,19 @@
         android:fontFamily="@font/beefd"
         tools:ignore="TextFields" />
 
+    <Button
+        android:layout_above="@id/ll_1"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/btn_back"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/beefd"
+        android:onClick="onBackButtonPress"/>
 
     <LinearLayout
         android:id="@+id/ll_1"
@@ -71,7 +85,8 @@
             android:text="@string/_0"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_1"
@@ -81,7 +96,8 @@
             android:text="@string/_1"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_2"
@@ -91,7 +107,8 @@
             android:text="@string/_2"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_3"
@@ -101,7 +118,8 @@
             android:text="@string/_3"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_4"
@@ -111,7 +129,8 @@
             android:text="@string/_4"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_5"
@@ -121,7 +140,8 @@
             android:text="@string/_5"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_6"
@@ -131,7 +151,8 @@
             android:text="@string/_6"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_7"
@@ -141,7 +162,8 @@
             android:text="@string/_7"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
         <Button
             android:id="@+id/btn_8"
@@ -151,7 +173,8 @@
             android:text="@string/_8"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>
 
 
         <Button
@@ -162,7 +185,8 @@
             android:text="@string/_9"
             android:textColor="@android:color/white"
             android:textSize="14sp"
-            android:fontFamily="@font/beefd"/>-->
+            android:fontFamily="@font/beefd"
+            android:onClick="onNumberButtonClick"/>-->
 
 
         <Button
@@ -170,18 +194,18 @@
             android:backgroundTint="@color/colorPrimaryDark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="A"
+            android:text="@string/a"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:fontFamily="@font/beefd"
-            android:onClick="onNumberButtonClick"/>
+            android:onClick="onNumberButtonClick" />
 
         <Button
             android:id="@+id/btn_b"
             android:backgroundTint="@color/colorPrimaryDark"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="B"
+            android:text="@string/b"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:fontFamily="@font/beefd"

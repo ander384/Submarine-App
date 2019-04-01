@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.widget.Button;
@@ -21,7 +22,11 @@ import java.util.Objects;
 public class ErrorScreen extends AppCompatActivity {
 
     private TextView inputDateTextView;
-    private Button zeroButton;
+    private Button enterButton;
+    private Button clearButton;
+
+    //If number functionality is ever needed
+    /*private Button zeroButton;
     private Button oneButton;
     private Button twoButton;
     private Button threeButton;
@@ -30,15 +35,20 @@ public class ErrorScreen extends AppCompatActivity {
     private Button sixButton;
     private Button sevenButton;
     private Button eightButton;
-    private Button nineButton;
-    private Button enterButton;
-    private Button clearButton;
+    private Button nineButton;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_error_screen);
         this.inputDateTextView = findViewById(R.id.tv_input_date);
+        this.enterButton = findViewById(R.id.btn_enter);
+        this.clearButton = findViewById(R.id.btn_clear);
+
+        //Forces the tablet to not auto-lock
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
+        //If there is a need to add number buttons later
         /*this.zeroButton = findViewById(R.id.btn_0);
         this.oneButton = findViewById(R.id.btn_1);
         this.twoButton = findViewById(R.id.btn_2);
@@ -49,86 +59,14 @@ public class ErrorScreen extends AppCompatActivity {
         this.sevenButton = findViewById(R.id.btn_7);
         this.eightButton = findViewById(R.id.btn_8);
         this.nineButton = findViewById(R.id.btn_9);*/
-        this.enterButton = findViewById(R.id.btn_enter);
-        this.clearButton = findViewById(R.id.btn_clear);
 
-
-
-        /*this.zeroButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.oneButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.twoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.threeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.fourButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.fiveButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-        this.sixButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.sevenButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.eightButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });
-
-        this.nineButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                onNumberButtonClick(view);
-            }
-        });*/
 
         this.enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Button button = (Button) view;
                 String number = inputDateTextView.getText().toString();
-                if (Objects.equals(number, "CATS")) {
+                if (Objects.equals(number, "MINERVA")) {
                     Intent myIntent = new Intent(ErrorScreen.this, ClueScreen.class);
                     ErrorScreen.this.startActivity(myIntent);
                 }
@@ -175,7 +113,7 @@ public class ErrorScreen extends AppCompatActivity {
     public void onNumberButtonClick(View view){
         String currentText = inputDateTextView.getText().toString();
         //Will only concatenate the next number if less than 4 numbers have been entered
-        if (currentText.length()<4)
+        if (currentText.length()<10)
         {
             Button button = (Button) view;
             String number = button.getText().toString();
@@ -193,4 +131,7 @@ public class ErrorScreen extends AppCompatActivity {
     }
 
 
+    public void onBackButtonPress(View view) {
+        this.finish();
+    }
 }
