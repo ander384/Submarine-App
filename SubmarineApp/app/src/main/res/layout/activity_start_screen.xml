@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="booklist.christine.anderson.submarineapp.StartScreenActivity"
-    android:background="#1c0000"
+    android:background="#3d0101"
     android:onClick="onTouchScreen">
 
 </android.support.constraint.ConstraintLayout>
